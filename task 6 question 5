@@ -1,0 +1,15 @@
+def distribute_mangoes(bags, M):
+    bags.sort()  # Sort the bags in ascending order
+    min_difference = float('inf')
+
+    for i in range(len(bags) - M + 1):
+        difference = bags[i + M - 1] - bags[i]
+        min_difference = min(min_difference, difference)
+
+    return min_difference
+
+# Example usage:
+bags = [10, 12, 14, 17, 23, 36, 48]
+M = 3  # Number of students
+result = distribute_mangoes(bags, M)
+print("Minimum Difference:", result)
