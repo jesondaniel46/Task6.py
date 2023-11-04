@@ -1,0 +1,13 @@
+# Define three example lists
+list1 = [1, 2, 3, 4, 5, 6]
+list2 = [4, 5, 6, 7, 8, 9]
+list3 = [6, 7, 8, 9, 10]
+
+# Find duplicates using set intersection
+duplicates = set(list1) & set(list2) & set(list3)
+
+# Convert the result to a list if needed
+duplicates_list = list(duplicates)
+
+# Print the list of duplicates
+print("Duplicates in the three lists:", duplicates_list)
