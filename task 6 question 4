@@ -1,0 +1,13 @@
+# Input the integer
+num = int(input("Enter an integer: "))
+
+# Find the last digit
+last_digit = num % 10
+
+# Find the first digit by converting the number to a string
+first_digit = int(str(num)[0])
+
+# Calculate the sum
+sum_of_first_and_last = first_digit + last_digit
+
+print("Sum of the first and last digit:", sum_of_first_and_last)
